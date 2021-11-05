@@ -9,6 +9,10 @@
 .logo {
 //  margin-right: 90px;
  color:var(--primary-text-color);
+ @media screen and (min-width: 768px){
+    margin-right: 90px;  
+
+ }
 }
 
 .link-current {
@@ -88,6 +92,9 @@
 
     .header {
         border-bottom: 1px solid #ececec;
+        @media screen and (min-width: 768px){
+            display: flex;
+        }
     }
     
     
@@ -99,12 +106,25 @@
         // display: flex;
         // margin-left: auto;
         display: none;
-        @media screen and (min-width: 768px){
-         display: flex; 
+    @media screen and (min-width: 768px) and (max-width: 1200px){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
     }
+    @media screen and (min-width: 1200px){
+        margin-left: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
 }
     .header-link {
-        padding-left: 50px;
+        // padding-left: 50px;
+        @media screen and (min-width: 1200px){
+            padding-left: 50px 
+        }
     }
     .nav-item:not(:last-child) {
         margin-right: 50px;
@@ -114,14 +134,20 @@
     .logo-item, .header-containe:hover {
         font-family: Raleway, sans-serif;
     font-style: normal;
-    @include font (26px, 700, 31px, 0.03em);
+    @include font (24px, 700, 28px, 0.03em);
         color: var(--accent-color);
+        @media screen and (min-width: 768px){
+            @include font (26px, 700, 31px, 0.03em);
+        }   
     }
     .logo-righr {
         font-family: Raleway, sans-serif;
     font-style: normal;
-    @include font (26px, 700, 31px, 0.03em);
+    @include font (24px, 700, 28px, 0.03em);
         color: var(--primary-text-color);
+        @media screen and (min-width: 768px){
+            @include font (26px, 700, 31px, 0.03em);
+        }   
     }
     
     .link-current {
@@ -177,12 +203,22 @@
         flex-direction: column;
         justify-content: space-between;
         }
-        & .is-hidden {
-            visibility: hidden;
-            opacity: 0;
-            pointer-events: none;
+
+    }
+
+    .menu-open-btn{
+        @media screen and (min-width: 768px){
+            display: none;
         }
     }
+
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+       
+}
+
 
 .mob-menu-item{
     &:not(last-child){
@@ -195,6 +231,14 @@ color: #212121;
     }
     }
 
+.mob-menu-link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+color: var(--accent-color);
+ }
+ }
+
 .mob-contacts-list{
         margin-bottom: 64px;
     }
@@ -202,16 +246,20 @@ color: #212121;
   &:not(last-child){
    margin-bottom: 32px;
  }
-.mob-contacts-link{
+}
+.mob-contacts-mail-link{
   @include font (24px, 500, 28px, 0.02em);
     text-decoration: none;
     color: #757575;
  }
-    &:first-child .mob-contacts-link{ 
-        font-size: 34px;
-        line-height: 40px;
- }
-}
+
+.mob-contacts-tel-link{
+    @include font (34px, 500, 40px, 0.02em);
+      text-decoration: none;
+      color: var(--accent-color);
+      margin-bottom: 32px;
+   }
+  
 
  .mob-social-list{
      display: flex;
@@ -231,6 +279,12 @@ color: #212121;
 
  }
  }
+ .menu-close-btn{
+     position: absolute;
+     right: 15px;
+     top: -37px;
+    
+ }
  .menu-open-btn, .menu-close-btn {
      width: 40px;
      height: 40px;
@@ -240,6 +294,15 @@ color: #212121;
      justify-content: center;
      margin-left: auto;
      background-color: transparent;
+     @media screen and (min-width: 768px){
+        display: none;
+    }
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+color: var(--accent-color);
+ }
+
  }
  .menu-open-btn span {
      width: 24px;

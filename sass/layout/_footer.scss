@@ -10,9 +10,11 @@
     flex-direction: column;
     align-items: center;
     @media screen and (min-width: 1200px){
-      margin-left: 93px;
+    margin-left: 100px;
+    text-align: left;
+    display: block;
     }
-  }
+}
 
   .foot-flex-link{
     display: flex;
@@ -37,8 +39,11 @@
     font-weight: bolder;
     margin-top: 60px;
     text-transform: uppercase;
-    
-  }
+    @media screen and (min-width: 1200px){
+      margin-top: auto;
+        text-align: left;
+      }
+    }
  
   .subscription {
     display: flex;
@@ -47,6 +52,12 @@
     @media screen and (max-width: 767px) {
       width: 100%;
     }
+    @media screen and (min-width: 1199px){
+      align-items: baseline;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+
   }
   .subscription-input {
     font-family: Roboto;
@@ -192,7 +203,9 @@
     flex-direction: column;
     @media screen and (min-width: 1200px){
       display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
     }
   }
 
