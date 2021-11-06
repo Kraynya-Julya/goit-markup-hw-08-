@@ -1327,7 +1327,6 @@ img {
   color: var(--title--text-color);
   margin-bottom: 20px;
   font-weight: bolder;
-  margin-top: 60px;
   text-transform: uppercase;
 }
 
@@ -1533,7 +1532,6 @@ ul {
 @media screen and (min-width: 1200px) {
   .footer-social {
     margin: 0px;
-    margin-top: 12px;
     margin-left: 70px;
     display: block;
   }
