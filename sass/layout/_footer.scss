@@ -109,6 +109,9 @@
     @extend %align-items;
     // justify-content: center;
     margin-left: -10px;
+    @media screen and (max-width: 767px){
+      margin-bottom: 60px;
+    }
   }
   
   ul {

@@ -117,7 +117,7 @@ position: relative;
     margin-bottom: 30px;
     color: var(--second-text-color);
     @media screen and (min-width: 1200px) {
-        @include font (14px, 700, 24px, 0.03em);
+        @include font (14px, 400, 24px, 0.03em);
 
 }
 }
