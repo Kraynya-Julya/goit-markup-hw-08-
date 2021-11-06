@@ -25,7 +25,6 @@
       margin-right: 165px;
     }
     @media screen and (min-width: 1200px){
-     margin-right: 70px;
     margin-bottom: 0;
     }
 
@@ -131,15 +130,17 @@
     margin: auto;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    @media screen and (min-width: 1200px){
+      text-align: left;
+      }
    
   }
 
   .contacts-address {
     // margin-top: 30px;
     margin-top: 20px;
-    @media screen and (min-width: 1200px){
-     margin-top: 30px;
-    } 
+  
   }
   .contacts-item-list {
     margin-top: 9px;
@@ -154,6 +155,9 @@
     font-family: Raleway, sans-serif;
     @include font (26px, 400, 31px, 0.03em);
     color: var(--title--text-color);
+    @media screen and (min-width: 1200px){
+      margin-right: auto;
+      }
   }
   .contacts-item-list {
     font-family: Roboto;
@@ -192,9 +196,10 @@
     flex-direction: column;
     align-items: center;
     @media screen and (min-width: 1200px){
-           margin: auto;
+           margin: 0px;
     margin-top: 12px;
     margin-left: 70px;
+    display: block;
     }
   }
   .foot-flex {
@@ -213,13 +218,14 @@
     margin-bottom: 20px;
     width: 145px;
     height: 16px;
-    left: 516px;
-    top: 2751px;
     color: var(--primary-title-color);
     font-family: Roboto;
     font-style: normal;
     @include font (14px, 700, 16px, 0.03em);
     text-transform: uppercase;
+    @media screen and (min-width: 1200px){
+      margin-top: auto;
+    }
   }
   
   .social-item {

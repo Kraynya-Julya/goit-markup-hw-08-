@@ -39,7 +39,7 @@
 
 .masters-title{
     color: var(--primary-text-color);
-    @include font (28px, 700, 42px, 0.03em);
+    @include font (28px, 700, 33px, 0.03em);
     text-align: center;
     margin-top: 0;
     margin-bottom: 30px;
@@ -50,13 +50,16 @@
 }
 
 .masters{
-    display: block;
     // padding: 94px 0;
     // padding-top: 94px;
     // padding-right: 0px;
     // padding-bottom: 94px;
     // padding-left: 0px;
     background-color: #F5F4FA;
+    @media screen and (min-width: 480px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
     @media screen and (min-width: 768px) {
         padding-top: 60px;
         padding-bottom: 60px;

@@ -1,9 +1,15 @@
 .section-btn {
     margin: auto;
     margin-bottom: 50px;
-    padding-top: 93px
-    
+    // padding-top: 93px
+    @media screen and (min-width: 768px){
+      padding-top: 60px;
+    }
+    @media screen and (min-width: 1200px){
+      padding-bottom: 93px;
+    }
   }
+    
   
   .item {
     // @extend %align-items;
@@ -59,7 +65,14 @@
   }
   
   .item {
-    padding-bottom: 50px;
+    margin: auto;
+    // padding-bottom: 56px;
+    @media screen and (min-width: 768px){
+      padding-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px){
+      padding-bottom: 56px;
+    }
   }
 
   .main-button {
