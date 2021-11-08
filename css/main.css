@@ -1072,6 +1072,7 @@ img {
 }
 
 .masters-title {
+  font-family: Roboto;
   color: var(--primary-text-color);
   font-size: 28px;
   font-weight: 700;
@@ -1084,6 +1085,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .masters-title {
+    font-family: Roboto;
     font-size: 36px;
     font-weight: 700;
     line-height: 1.16667;

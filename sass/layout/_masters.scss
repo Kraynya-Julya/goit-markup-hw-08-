@@ -38,12 +38,14 @@
 }
 
 .masters-title{
+    font-family: Roboto;
     color: var(--primary-text-color);
     @include font (28px, 700, 33px, 0.03em);
     text-align: center;
     margin-top: 0;
     margin-bottom: 30px;
     @media screen and (min-width: 1200px) {
+        font-family: Roboto;
         @include font (36px, 700, 42px, 0.03em);
         margin-bottom: 50px;
 }
